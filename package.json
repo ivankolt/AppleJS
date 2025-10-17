@@ -1,0 +1,22 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "Apple",
+  "main": "main",
+  "scripts": {
+    "test": "note"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivankolt/AppleJS.git"
+  },
+  "keywords": [
+    "ru"
+  ],
+  "author": "Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivankolt/AppleJS/issues"
+  },
+  "homepage": "https://github.com/ivankolt/AppleJS#readme"
+}

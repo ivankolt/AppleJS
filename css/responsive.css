@@ -1,0 +1,122 @@
+/* Планшеты и меньше */
+@media (max-width: 768px) {
+    /* Шапка */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        flex-direction: column;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navigation ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Типография */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Фильтры */
+    .category-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Товары */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Футер */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .contacts-list li {
+        justify-content: center;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .search-input {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    .product-name {
+        font-size: 1.2rem;
+    }
+    
+    .product-nutrition {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-section {
+        padding: 25px;
+    }
+    
+    .footer {
+        padding: 30px 0 15px;
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}

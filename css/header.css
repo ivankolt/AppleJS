@@ -1,0 +1,63 @@
+/* Шапка сайта */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), #8a7aed);
+    color: var(--white);
+    padding: 20px 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Навигация */
+.navigation ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: var(--white);
+    color: var(--primary-color);
+}

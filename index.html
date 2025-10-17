@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кондитерская Яблонька - свежие торты, пирожные и печенья">
+    <meta name="keywords" content="кондитерская, торты, пирожные, печенья, десерты">
+    <title>Кондитерская "Яблонька"</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип Яблонька">
+                    <h1>Кондитерская "Яблонька"</h1>
+                </div>
+                
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#products" class="nav-link">Продукция</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="search-section">
+                <h2>Найдите свой любимый десерт</h2>
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Поиск по названию товара..."
+                        autocomplete="off"
+                    >
+                    <div id="autocomplete" class="autocomplete-list"></div>
+                </div>
+            </section>
+
+            <section id="products" class="filter-section">
+                <h2>Наша продукция</h2>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Все</button>
+                    <button class="filter-btn" data-category="торт">Торты</button>
+                    <button class="filter-btn" data-category="пирожное">Пирожные</button>
+                    <button class="filter-btn" data-category="печенье">Печенья</button>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <div id="productsContainer" class="products-grid">
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2>О нас</h2>
+                <div class="about-content">
+                    <p>
+                        Кондитерская "Яблонька" - это место, где создаются настоящие кулинарные шедевры. 
+                        Мы используем только натуральные ингредиенты и проверенные рецепты, 
+                        чтобы каждый наш десерт радовал вас своим вкусом и качеством.
+                    </p>
+                    <p>
+                        Наши кондитеры с любовью готовят для вас свежие торты, ароматные пирожные 
+                        и хрустящее печенье. Каждое изделие - это результат многолетнего опыта 
+                        и творческого подхода к делу.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Блок "О нас" -->
+                <div class="footer-block">
+                    <h3>О компании</h3>
+                    <p>Кондитерская "Яблонька" - ваш надежный партнер в мире сладостей с 2010 года.</p>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-block">
+                    <h3>Контакты</h3>
+                    <ul class="contacts-list">
+                        <li>📞 Телефон: +7 (XXX) XXX-XX-XX</li>
+                        <li>📧 Email: info@yablonka.ru</li>
+                        <li>📍 Адрес: г. Москва, ул. Примерная, д. 1</li>
+                        <li>🕐 Режим работы: Пн-Вс 9:00-21:00</li>
+                    </ul>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="footer-block">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="ВКонтакте">
+                            <img src="images/icons/vk.svg" alt="ВКонтакте">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Одноклассники">
+                            <img src="images/icons/ok.svg" alt="Одноклассники">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Мой Мир">
+                            <img src="images/icons/max.svg" alt="Мой Мир">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кондитерская "Яблонька". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="js/products.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

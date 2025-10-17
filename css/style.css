@@ -1,0 +1,216 @@
+/* Основные стили и переменные */
+:root {
+    --primary-color: #6a5acd; /* Нежно-фиолетовый */
+    --background-color: #f5f5dc; /* Бежевый */
+    --secondary-color: #e6e6fa; /* Светло-фиолетовый */
+    --text-color: #333333;
+    --white: #ffffff;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Типография */
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Основной контент */
+.main {
+    flex: 1;
+    padding: 40px 0;
+}
+
+/* Секции */
+section {
+    margin-bottom: 60px;
+}
+
+/* Поиск */
+.search-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-family: 'Calibri', sans-serif;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+    transition: var(--transition);
+    background-color: var(--white);
+}
+
+.search-input:focus {
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.3);
+    border-color: var(--primary-color);
+}
+
+/* Автодополнение */
+.autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    display: none;
+}
+
+.autocomplete-list.active {
+    display: block;
+}
+
+.autocomplete-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Фильтры категорий */
+.filter-section {
+    text-align: center;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 600;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Секция "О нас" */
+.about-section {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.about-content p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Скролл */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a4abd;
+}
